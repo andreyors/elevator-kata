@@ -10,10 +10,12 @@
             "request": "launch",
             "module": "pytest",
             "args": [
-                "--no-cov"
+                "--no-cov ${workspaceFolder}/test_elevator.py"
             ],
-            "pythonPath": "${workspaceFolder}/venv/bin",
-            "program": "${workspaceFolder}/test_elevator.py"
+            "pythonPath": "${workspaceFolder}/venv/bin/python",            
+            "cwd": "${workspaceRoot}/",
+            "env": {},
+            "envFile": "${workspaceRoot}/venv"
         },
     ]
 }
