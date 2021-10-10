@@ -13,17 +13,36 @@
             "justMyCode":false
         },
         {
-            "name": "Python: Pytest",
+            "name": "Pytest: Current file",
             "type": "python",
             "request": "launch",
             "stopOnEntry": false,
             "pythonPath": "${config:python.pythonPath}",
             "module": "pytest",            
             "args": [
-                "--no-cov"
+                "--no-cov ${file}"
             ],                       
             "cwd": "${workspaceFolder}/",
-            "env": {},
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "envFile": "${workspaceFolder}/venv",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Pytest: Current test",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "${config:python.pythonPath}",
+            "module": "pytest",            
+            "args": [
+                "--no-cov ${file}::${input:pickPytestFoundTest}"
+            ],                       
+            "cwd": "${workspaceFolder}/",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
             "envFile": "${workspaceFolder}/venv",
             "console": "integratedTerminal"
         },
