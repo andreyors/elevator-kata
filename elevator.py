@@ -12,9 +12,10 @@ class Elevator:
         self.requested_floors = []
         
     def request_floor(self, desired_floor):
-        if desired_floor not in self.requested_floors:
-            self.requested_floors.append(desired_floor)
-            
+        if desired_floor in self.requested_floors:
+            return
+        
+        self.requested_floors.append(desired_floor)            
         self.requested_floors = sorted(self.requested_floors, key=self.request_weight)        
     
     def request_weight(self, requested_floor):
