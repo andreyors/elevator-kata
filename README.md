@@ -13,3 +13,6 @@ These are some features. They can be implemented in any order you prefer.
 - [ ] you may implement doors (opening and closing)
 - [ ] you may implement DING!
 - [ ] there can be more than one elevator
+
+## Some clarifications
+Implemented only the case when the controlling buttons are inside of the elevator - once you pressed the button, it stays on until the floor is reached
