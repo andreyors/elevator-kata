@@ -8,8 +8,8 @@ These are some features. They can be implemented in any order you prefer.
 - [x] an elevator doesn't respond immediately. consider options to simulate time
 - [x] elevator calls are queued not necessarily FIFO
 - [x] you may test a sequence of events happening when passengers use the elevator 
-* you may implement current floor monitor
-* you may implement direction arrows
-* you may implement doors (opening and closing)
-* you may implement DING!
-* there can be more than one elevator
+- [ ] you may implement current floor monitor
+- [ ] you may implement direction arrows
+- [ ] you may implement doors (opening and closing)
+- [ ] you may implement DING!
+- [ ] there can be more than one elevator
