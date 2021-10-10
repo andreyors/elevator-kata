@@ -8,11 +8,12 @@
             "name": "Python: elevator-kata test",
             "type": "python",
             "request": "launch",
+            "stopOnEntry": false,
             "module": "pytest",
+            "pythonPath": "${workspaceRoot}/venv/bin/python", 
             "args": [
-                "--no-cov ${workspaceFolder}/test_elevator.py"
-            ],
-            "pythonPath": "${workspaceFolder}/venv/bin/python",            
+                "--no-cov ${workspaceRoot}/test_elevator.py"
+            ],                       
             "cwd": "${workspaceRoot}/",
             "env": {},
             "envFile": "${workspaceRoot}/venv"
