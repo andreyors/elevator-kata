@@ -8,43 +8,31 @@
             "name": "Python: Debug",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "justMyCode":false
+            "program": "${file}",            
+            "justMyCode": true
         },
         {
             "name": "Pytest: Current file",
             "type": "python",
-            "request": "launch",
-            "stopOnEntry": false,
-            "pythonPath": "${config:python.pythonPath}",
+            "request": "launch",                        
             "module": "pytest",            
             "args": [
-                "--no-cov ${file}"
-            ],                       
-            "cwd": "${workspaceFolder}/",
+                "--no-cov ${workspaceFolder}/${file}"
+            ],                                   
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
             },
-            "envFile": "${workspaceFolder}/venv",
-            "console": "integratedTerminal"
+            "justMyCode": true
         },
         {
             "name": "Pytest: Current test",
             "type": "python",
-            "request": "launch",
-            "stopOnEntry": false,
-            "pythonPath": "${config:python.pythonPath}",
+            "request": "launch",            
             "module": "pytest",            
             "args": [
-                "--no-cov ${file}::${input:pickPytestFoundTest}"
-            ],                       
-            "cwd": "${workspaceFolder}/",
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            },
-            "envFile": "${workspaceFolder}/venv",
-            "console": "integratedTerminal"
+                "--no-cov ${workspaceFolder}/${file}::${input:pickPytestFoundTest}"
+            ],
+            "justMyCode": true
         },
     ]
 }
