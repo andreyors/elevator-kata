@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",            
-            "justMyCode": true
+            "justMyCode": false
         },
         {
             "name": "Pytest: Current file",
@@ -22,17 +22,7 @@
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
             },
-            "justMyCode": true
-        },
-        {
-            "name": "Pytest: Current test",
-            "type": "python",
-            "request": "launch",            
-            "module": "pytest",            
-            "args": [
-                "--no-cov ${workspaceFolder}/${file}::${input:pickPytestFoundTest}"
-            ],
-            "justMyCode": true
-        },
+            "justMyCode": false
+        }
     ]
 }

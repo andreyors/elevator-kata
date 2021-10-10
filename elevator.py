@@ -1,5 +1,4 @@
 from enum import Enum
-from math import inf
 
 class Direction(Enum):
     UP = 1
@@ -34,7 +33,7 @@ class Elevator:
         """        
         lift_goes_up = requested_floor - self.current_floor > 0
         if self.direction == Direction.DOWN and lift_goes_up:
-            return inf
+            return float('inf')
         
         return abs(requested_floor - self.current_floor)
         
