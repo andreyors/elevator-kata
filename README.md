@@ -16,3 +16,6 @@ These are some features. They can be implemented in any order you prefer.
 
 ## Some clarifications
 Implemented only the case when the controlling buttons are inside of the elevator - once you pressed the button, it stays on until the floor is reached
+
+## Plans
+Introduce elevator control system (multiple elevators, buttons with up/down button)
