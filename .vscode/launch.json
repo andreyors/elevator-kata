@@ -17,7 +17,7 @@
             "request": "launch",                        
             "module": "pytest",            
             "args": [
-                "--no-cov ${workspaceFolder}/${file}"
+                "${workspaceFolder}/test_elevator.py"
             ],                                   
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
